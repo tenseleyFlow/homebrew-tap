@@ -1,8 +1,8 @@
 class Fortty < Formula
   desc "GPU-accelerated terminal emulator written in Fortran"
   homepage "https://github.com/FortranGoingOnForty/fortty"
-  url "https://github.com/FortranGoingOnForty/fortty/archive/refs/tags/v0.1.3.tar.gz"
-  sha256 "20b39136cb6dd954e2aae48cafc3fd8d05aa068779d14dfdbb5f84c71ee388d9"
+  url "https://github.com/FortranGoingOnForty/fortty/archive/refs/tags/v0.1.4.tar.gz"
+  sha256 "d8620f932e286679e0cc09af28fa6d395311ee8da7230a2f2c588127331233f3"
   license "MIT"
 
   depends_on "cmake" => :build
