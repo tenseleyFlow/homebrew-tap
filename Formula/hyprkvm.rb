@@ -1,8 +1,8 @@
 class Hyprkvm < Formula
   desc "Hyprland-native software KVM switch"
   homepage "https://github.com/tenseleyFlow/hyprKVM"
-  url "https://github.com/tenseleyFlow/hyprKVM/archive/refs/tags/v0.5.1.tar.gz"
-  sha256 "09d420a468b23c259df0a4a3335d5912c2687c9d7f5979eeb7e3d5475ee8f229"
+  url "https://github.com/tenseleyFlow/hyprKVM/archive/refs/tags/v0.6.4.tar.gz"
+  sha256 "18a510ea78fcd9b5c15d309364e8109d6cc6af0c4136aa0fa8e900f24e45352e"
   license "MIT"
   head "https://github.com/tenseleyFlow/hyprKVM.git", branch: "trunk"
 
