@@ -1,8 +1,8 @@
 class Gump < Formula
   desc "A smarter cd command - directory jumper using frecency"
   homepage "https://github.com/tenseleyFlow/gump"
-  url "https://github.com/tenseleyFlow/gump/archive/refs/tags/v0.2.2.tar.gz"
-  sha256 "c87841918270da04db8e75bd3e651ec57dfe1b22d042d9fba834582798a44725"
+  url "https://github.com/tenseleyFlow/gump/archive/refs/tags/v0.2.3.tar.gz"
+  sha256 "4fa63cebc39ccc584e61791590165648e0282b41452d6fdf20374c1efd4b7f44"
   license "MIT"
   head "https://github.com/tenseleyFlow/gump.git", branch: "trunk"
 
