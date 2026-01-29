@@ -25,10 +25,17 @@ class Gump < Formula
       Fish (~/.config/fish/config.fish):
         gump init fish | source
 
+      Then restart your shell or source the config file.
+
       Usage:
         g foo        # jump to best match
         gi foo       # interactive with fzf
         foo          # no prefix needed
+        g            # go home
+        g -          # go back
+
+      Import existing data:
+        gump import  # imports from zoxide/autojump/z/fasd
     EOS
   end
 
