@@ -1,8 +1,8 @@
 class Fackr < Formula
   desc "Terminal text editor written in Rust - facsimile reimplementation"
   homepage "https://github.com/TenseleyFlow/fackr"
-  url "https://github.com/TenseleyFlow/fackr/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "9b54b8d883bb81f474970d6db931a2dbd19132619c01f152a0d01762d7c3d468"
+  url "https://github.com/TenseleyFlow/fackr/archive/refs/tags/v1.2.1.tar.gz"
+  sha256 "e2ad86f467171637f5f82189944c454e21e17cbc58f97d7b34d2805a40a7b59d"
   license "MIT"
   head "https://github.com/TenseleyFlow/fackr.git", branch: "trunk"
 
