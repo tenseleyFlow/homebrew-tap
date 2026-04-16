@@ -1,8 +1,8 @@
 class Gitswitch < Formula
   desc "Secure Git identity and SSH/GPG key management for seamless account switching"
   homepage "https://github.com/tenseleyFlow/gitswitchC"
-  url "https://github.com/tenseleyFlow/gitswitchC/archive/refs/tags/v1.1.13.tar.gz"
-  sha256 "2abebb7f3716d2850928142e8ac4371c64937cd51fdf4fa5908224e2fa83d256"
+  url "https://github.com/tenseleyFlow/gitswitchC/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "c644056ce5d21227e3168af918e95ae20547465fb226f4104182a95979dd50d7"
   license "GPL-3.0-or-later"
   head "https://github.com/tenseleyFlow/gitswitchC.git", branch: "trunk"
 
@@ -23,11 +23,17 @@ class Gitswitch < Formula
     <<~EOS
       To integrate with your shell, add to your shell config:
 
-      For bash/zsh:
-        eval "$(gitswitch --ssh-agent-info)"
+      For bash:
+        eval "$(gitswitch init bash)"
+
+      For zsh:
+        eval "$(gitswitch init zsh)"
 
       For fish:
-        gitswitch --ssh-agent-info | source
+        gitswitch init fish | source
+
+      (The legacy `gitswitch --ssh-agent-info` invocation is still accepted
+      as a compat alias and auto-detects your shell from $SHELL.)
     EOS
   end
 
