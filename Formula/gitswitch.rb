@@ -1,21 +1,20 @@
 class Gitswitch < Formula
   desc "Secure Git identity and SSH/GPG key management for seamless account switching"
   homepage "https://github.com/tenseleyFlow/gitswitchC"
-  url "https://github.com/tenseleyFlow/gitswitchC/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "c644056ce5d21227e3168af918e95ae20547465fb226f4104182a95979dd50d7"
+  url "https://github.com/tenseleyFlow/gitswitchC/archive/refs/tags/v1.3.1.tar.gz"
+  sha256 "8b0f9977782b13cf52dc71260a1d875335bff3469d1dc4126cc1d40af4be342a"
   license "GPL-3.0-or-later"
   head "https://github.com/tenseleyFlow/gitswitchC.git", branch: "trunk"
 
   depends_on "openssl"
 
   def install
-    # Build release version
-    system "make", "BUILD_TYPE=release"
+    # Pass VERSION/COMMIT explicitly: GitHub tarballs strip .git, which would
+    # otherwise leave the binary reporting "(unknown)" even though the upstream
+    # Makefile has a VERSION file fallback. This just makes it belt-and-suspenders.
+    system "make", "BUILD_TYPE=release", "VERSION=#{version}", "COMMIT=homebrew"
 
-    # Install binary
     bin.install "build/bin/gitswitch"
-
-    # Install documentation
     doc.install "README.md"
   end
 
