@@ -12,6 +12,7 @@ brew tap tenseleyFlow/tap
 
 | Formula | Description | Install |
 |---------|-------------|---------|
+| **dlm** | Text file becomes your personal, locally-trained LLM (LoRA/QLoRA + Ollama export) | `brew install dlm` |
 | **fackr** | Terminal text editor written in Rust (facsimile reimplementation) | `brew install fackr` |
 | **fussr** | Git staging TUI tool - Rust port of fuss | `brew install fussr` |
 | **gitswitch** | Secure Git identity and SSH/GPG key management | `brew install gitswitch` |
@@ -25,6 +26,7 @@ brew tap tenseleyFlow/tap
 brew tap tenseleyFlow/tap
 
 # Then install any formula
+brew install dlm
 brew install gitswitch
 brew install hyprkvm
 brew install parrot
