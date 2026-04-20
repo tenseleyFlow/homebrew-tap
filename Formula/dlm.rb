@@ -5,7 +5,7 @@ class Dlm < Formula
   # only, no binaries) so the convert_hf_to_gguf.py / convert_lora_to_gguf.py
   # scripts `dlm export` invokes are available under libexec.
   url "https://github.com/tenseleyFlow/DocumentLanguageModel/releases/download/v0.9.0/dlm-v0.9.0.tar.gz"
-  sha256 "REPLACE_ON_FIRST_RELEASE"
+  sha256 "887e89d5651861c5f9c55bb3fcf3c238a133b74469c51227401a0c1b6b7ee9a9"
   license "MIT"
 
   depends_on "python@3.11"
@@ -56,7 +56,7 @@ class Dlm < Formula
           dlm doctor
           dlm --help
 
-      Docs: https://tenseleyflow.github.io/DocumentLanguageModel/
+      Docs: https://github.com/tenseleyFlow/DocumentLanguageModel/tree/v0.9.0/docs
     EOS
   end
 
