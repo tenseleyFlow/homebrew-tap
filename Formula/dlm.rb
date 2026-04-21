@@ -4,8 +4,8 @@ class Dlm < Formula
   # Fat tarball built by release.yml — bundles vendor/llama.cpp/ (source
   # only, no binaries) so the convert_hf_to_gguf.py / convert_lora_to_gguf.py
   # scripts `dlm export` invokes are available under libexec.
-  url "https://github.com/tenseleyFlow/DocumentLanguageModel/releases/download/v0.9.0/dlm-v0.9.0.tar.gz"
-  sha256 "887e89d5651861c5f9c55bb3fcf3c238a133b74469c51227401a0c1b6b7ee9a9"
+  url "https://github.com/tenseleyFlow/DocumentLanguageModel/releases/download/v0.10.0/dlm-v0.10.0.tar.gz"
+  sha256 "b4edca82b0c8df2ce06acbdaa3f9d3e06ecdac63ee6defe4690264ce5bb1cd5d"
   license "MIT"
 
   depends_on "python@3.11"
@@ -56,7 +56,7 @@ class Dlm < Formula
           dlm doctor
           dlm --help
 
-      Docs: https://github.com/tenseleyFlow/DocumentLanguageModel/tree/v0.9.0/docs
+      Docs: https://github.com/tenseleyFlow/DocumentLanguageModel/tree/v0.10.0/docs
     EOS
   end
 
