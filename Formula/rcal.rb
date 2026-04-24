@@ -1,8 +1,8 @@
 class Rcal < Formula
   desc "Responsive terminal calendar with local events and Microsoft Graph sync"
   homepage "https://github.com/tenseleyFlow/rcal"
-  url "https://github.com/tenseleyFlow/rcal/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "f5406444738d6e62f27de368987b8d41b38b1bc1a672ab3932a9d30f65bdfc16"
+  url "https://github.com/tenseleyFlow/rcal/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "5abfdb8412ee8a7e794aa4e62d3d0dbd10931b0a0f2f3899a6cd91ab76d6ba20"
   license "GPL-3.0-only"
   head "https://github.com/tenseleyFlow/rcal.git", branch: "trunk"
 
@@ -15,14 +15,8 @@ class Rcal < Formula
 
   def caveats
     <<~EOS
-      To create a starter config:
-        rcal config init
-
-      To configure Microsoft calendars, edit your config.toml with provider
-      account settings, then run:
-        rcal providers microsoft auth login --account <account> --browser
-        rcal providers microsoft calendars list --account <account>
-        rcal providers microsoft sync --account <account>
+      To configure Microsoft calendars:
+        rcal providers microsoft setup --account <account> --browser
 
       To install the reminder daemon:
         rcal reminders install
