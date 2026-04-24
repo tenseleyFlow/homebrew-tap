@@ -18,6 +18,7 @@ brew tap tenseleyFlow/tap
 | **gitswitch** | Secure Git identity and SSH/GPG key management | `brew install gitswitch` |
 | **hyprkvm** | Hyprland-native software KVM switch | `brew install hyprkvm` |
 | **parrot** | Intelligent CLI command failure assistant with AI-powered responses | `brew install parrot` |
+| **rcal** | Responsive terminal calendar with local events and Microsoft Graph sync | `brew install rcal` |
 
 ## Quick Install Examples
 
@@ -32,6 +33,7 @@ brew install hyprkvm
 brew install parrot
 brew install fackr
 brew install fussr
+brew install rcal
 ```
 
 ## Links
