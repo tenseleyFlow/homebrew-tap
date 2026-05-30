@@ -1,8 +1,8 @@
 class Gitswitch < Formula
   desc "Secure Git identity and SSH/GPG key management for seamless account switching"
   homepage "https://github.com/tenseleyFlow/gitswitchC"
-  url "https://github.com/tenseleyFlow/gitswitchC/archive/refs/tags/v1.7.1.tar.gz"
-  sha256 "ba82b2e04847f49b77d549f5e5bbbcf889a5002f699148e4304b60014ac4ff2c"
+  url "https://github.com/tenseleyFlow/gitswitchC/archive/refs/tags/v1.7.2.tar.gz"
+  sha256 "b186637c72398fb16c85c11651a7d52fc05eb82f8d4ade541466c527e18f818a"
   license "GPL-3.0-or-later"
   head "https://github.com/tenseleyFlow/gitswitchC.git", branch: "trunk"
 
