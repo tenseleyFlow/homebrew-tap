@@ -2,8 +2,8 @@ class Mat < Formula
   desc "A fast cat/bat alternative with syntax highlighting and a built-in pager"
   homepage "https://github.com/tenseleyFlow/mat"
   url "https://github.com/tenseleyFlow/mat.git",
-      tag: "v0.1.0",
-      revision: "d5f24e06fa84a1c33e6014bb567f6ef27c614b19"
+      tag: "v0.2.0",
+      revision: "bea8920c086ba8ecfafd3f41e7a84e908d906c2c"
   license "MIT"
   head "https://github.com/tenseleyFlow/mat.git", branch: "trunk"
 
@@ -18,7 +18,7 @@ class Mat < Formula
   end
 
   test do
-    assert_match "mat 0.1.0", shell_output("#{bin}/mat --version")
+    assert_match "mat 0.2.0", shell_output("#{bin}/mat --version")
     assert_match "Usage:", shell_output("#{bin}/mat --help")
 
     (testpath/"hello.txt").write("hello world\n")
