@@ -2,8 +2,8 @@ class Mat < Formula
   desc "A fast cat/bat alternative with syntax highlighting and a built-in pager"
   homepage "https://github.com/tenseleyFlow/mat"
   url "https://github.com/tenseleyFlow/mat.git",
-      tag: "v0.2.0",
-      revision: "bea8920c086ba8ecfafd3f41e7a84e908d906c2c"
+      tag: "v0.3.0",
+      revision: "9420391a8e4cd51d51e76126d6a2c3b65db12b51"
   license "MIT"
   head "https://github.com/tenseleyFlow/mat.git", branch: "trunk"
 
