@@ -18,8 +18,8 @@ class Mat < Formula
   end
 
   test do
-    assert_match "mat 0.2.0", shell_output("#{bin}/mat --version")
-    assert_match "Usage:", shell_output("#{bin}/mat --help")
+    assert_match "mat 0.3.0", shell_output("#{bin}/mat --version")
+    assert_match "usage:", shell_output("#{bin}/mat --help")
 
     (testpath/"hello.txt").write("hello world\n")
     assert_equal "hello world\n", shell_output("#{bin}/mat hello.txt")
