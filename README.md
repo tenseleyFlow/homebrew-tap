@@ -12,6 +12,7 @@ brew tap tenseleyFlow/tap
 
 | Formula | Description | Install |
 |---------|-------------|---------|
+| **aspen** | Fast, byte-compatible reimplementation of tree(1) in C | `brew install aspen` |
 | **dlm** | Text file becomes your personal, locally-trained LLM (LoRA/QLoRA + Ollama export) | `brew install dlm` |
 | **fackr** | Terminal text editor written in Rust (facsimile reimplementation) | `brew install fackr` |
 | **fussr** | Git staging TUI tool - Rust port of fuss | `brew install fussr` |
@@ -27,6 +28,7 @@ brew tap tenseleyFlow/tap
 brew tap tenseleyFlow/tap
 
 # Then install any formula
+brew install aspen
 brew install dlm
 brew install gitswitch
 brew install hyprkvm
