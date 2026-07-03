@@ -15,6 +15,7 @@ brew tap tenseleyFlow/tap
 | **aspen** | Fast, byte-compatible reimplementation of tree(1) in C | `brew install aspen` |
 | **dlm** | Text file becomes your personal, locally-trained LLM (LoRA/QLoRA + Ollama export) | `brew install dlm` |
 | **fackr** | Terminal text editor written in Rust (facsimile reimplementation) | `brew install fackr` |
+| **ferret** | Fast, byte-for-byte GNU find(1) clone in C | `brew install ferret` |
 | **fussr** | Git staging TUI tool - Rust port of fuss | `brew install fussr` |
 | **gitswitch** | Secure Git identity and SSH/GPG key management | `brew install gitswitch` |
 | **hyprkvm** | Hyprland-native software KVM switch | `brew install hyprkvm` |
@@ -34,6 +35,7 @@ brew install gitswitch
 brew install hyprkvm
 brew install parrot
 brew install fackr
+brew install ferret
 brew install fussr
 brew install rcal
 ```
