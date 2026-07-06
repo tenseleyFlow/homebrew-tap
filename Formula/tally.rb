@@ -14,7 +14,7 @@ class Tally < Formula
 
   test do
     assert_match "tally #{version}", shell_output("#{bin}/tally --version")
-    assert_equal "0 0 0", shell_output("printf '' | #{bin}/tally").strip
+    assert_equal %w[0 0 0], shell_output("printf '' | #{bin}/tally").split
     # ty is the same binary under a shorter name.
     assert_equal "3", shell_output("printf 'a b c' | #{bin}/ty -w").strip
   end
