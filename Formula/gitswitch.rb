@@ -1,8 +1,8 @@
 class Gitswitch < Formula
   desc "Secure Git identity and SSH/GPG key management for seamless account switching"
   homepage "https://github.com/tenseleyFlow/gitswitchC"
-  url "https://github.com/tenseleyFlow/gitswitchC/archive/refs/tags/v1.7.3.tar.gz"
-  sha256 "ae6eb369b38eeb8a0e7c5e6d218aa7ae2a9745d475d14f36baf5057af8fc7cf4"
+  url "https://github.com/tenseleyFlow/gitswitchC/archive/refs/tags/v1.8.0.tar.gz"
+  sha256 "3dc8253bdd5cd90ca6923ddeafc2019105796f7dee84836f8a893c8b10c14d63"
   license "GPL-3.0-or-later"
   head "https://github.com/tenseleyFlow/gitswitchC.git", branch: "trunk"
 
@@ -16,6 +16,10 @@ class Gitswitch < Formula
 
     bin.install "build/bin/gitswitch"
     doc.install "README.md"
+
+    bash_completion.install "completions/gitswitch.bash" => "gitswitch"
+    zsh_completion.install "completions/gitswitch.zsh" => "_gitswitch"
+    fish_completion.install "completions/gitswitch.fish"
   end
 
   def caveats
