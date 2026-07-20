@@ -1,8 +1,8 @@
 class Liszt < Formula
   desc "GNU ls reimplementation: byte-identical output, radix sorts, parallel stat"
   homepage "https://github.com/tenseleyFlow/liszt"
-  url "https://github.com/tenseleyFlow/liszt/releases/download/v0.2.0/liszt-0.2.0.tar.gz"
-  sha256 "c045e8827f1efdae466a7d83cc32cd96b911a3fa27394aa76a2fa028490b1e30"
+  url "https://github.com/tenseleyFlow/liszt/releases/download/v0.3.0/liszt-0.3.0.tar.gz"
+  sha256 "549538c2e595fdad1c73957068022471f75a0c5a55c54164da1f5596d80094a2"
   license "GPL-3.0-or-later"
   head "https://github.com/tenseleyFlow/liszt.git", branch: "trunk"
 
@@ -25,5 +25,8 @@ class Liszt < Formula
     refute_equal "a\nb", icons.strip
     tree = shell_output("#{bin}/liszt --tree --tree-glyphs=ascii #{testpath}")
     assert_match "`-- ", tree
+    # v0.3: themes emit 24-bit SGR.
+    themed = shell_output("#{bin}/liszt --theme=dracula -l #{testpath}")
+    assert_match "38;2;", themed
   end
 end
