@@ -2,7 +2,7 @@ class Liszt < Formula
   desc "GNU ls reimplementation: byte-identical output, radix sorts, parallel stat"
   homepage "https://github.com/tenseleyFlow/liszt"
   url "https://github.com/tenseleyFlow/liszt/releases/download/v0.3.0/liszt-0.3.0.tar.gz"
-  sha256 "549538c2e595fdad1c73957068022471f75a0c5a55c54164da1f5596d80094a2"
+  sha256 "fd3924a74174f8086ebb0141d6e3b039629cb0c8579dc304ce0d6206a219e8c4"
   license "GPL-3.0-or-later"
   head "https://github.com/tenseleyFlow/liszt.git", branch: "trunk"
 
