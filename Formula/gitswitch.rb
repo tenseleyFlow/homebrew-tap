@@ -1,25 +1,27 @@
 class Gitswitch < Formula
   desc "Secure Git identity and SSH/GPG key management for seamless account switching"
   homepage "https://github.com/tenseleyFlow/gitswitchC"
-  url "https://github.com/tenseleyFlow/gitswitchC/archive/refs/tags/v1.9.0.tar.gz"
-  sha256 "d3e1b4245f1243d363b2fe24165863cc9a97892c8f9bb10e100e5d1abc89b30a"
+  url "https://github.com/tenseleyFlow/gitswitchC/archive/refs/tags/v1.9.1.tar.gz"
+  sha256 "897bd0321f2e12a3160ec97ddb1e95495d766056e435fe3c6a50d9c14db226f0"
   license "GPL-3.0-or-later"
   head "https://github.com/tenseleyFlow/gitswitchC.git", branch: "trunk"
 
-  depends_on "openssl"
+  depends_on "gnupg"
+  depends_on "readline"
+  uses_from_macos "git"
+
+  on_linux do
+    depends_on "openssh"
+  end
 
   def install
-    # Pass VERSION/COMMIT explicitly: GitHub tarballs strip .git, which would
-    # otherwise leave the binary reporting "(unknown)" even though the upstream
-    # Makefile has a VERSION file fallback. This just makes it belt-and-suspenders.
-    system "make", "BUILD_TYPE=release", "VERSION=#{version}", "COMMIT=homebrew"
+    # GitHub tag archives omit .git; embed the package provenance explicitly.
+    system "make", "BUILD_TYPE=release", "READLINE=1",
+                   "VERSION=#{version}", "COMMIT=homebrew"
+    system "make", "install", "BUILD_TYPE=release", "READLINE=1",
+                   "VERSION=#{version}", "COMMIT=homebrew", "PREFIX=#{prefix}"
 
-    bin.install "build/bin/gitswitch"
     doc.install "README.md"
-
-    bash_completion.install "completions/gitswitch.bash" => "gitswitch"
-    zsh_completion.install "completions/gitswitch.zsh" => "_gitswitch"
-    fish_completion.install "completions/gitswitch.fish"
   end
 
   def caveats
@@ -41,6 +43,7 @@ class Gitswitch < Formula
   end
 
   test do
-    assert_match "gitswitch", shell_output("#{bin}/gitswitch --version 2>&1", 1)
+    assert_equal "gitswitch-c #{version} (homebrew)\n",
+                 shell_output("#{bin}/gitswitch --version")
   end
 end
