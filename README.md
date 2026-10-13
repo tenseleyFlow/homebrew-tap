@@ -13,6 +13,7 @@ brew tap tenseleyFlow/tap
 | Formula | Description | Install |
 |---------|-------------|---------|
 | **aspen** | Fast, byte-compatible reimplementation of tree(1) in C | `brew install aspen` |
+| **cgfried** | Standards-first C17 compiler for x86-64 and ARM64 | `brew install cgfried` |
 | **dlm** | Text file becomes your personal, locally-trained LLM (LoRA/QLoRA + Ollama export) | `brew install dlm` |
 | **fackr** | Terminal text editor written in Rust (facsimile reimplementation) | `brew install fackr` |
 | **ferret** | Fast, byte-for-byte GNU find(1) clone in C | `brew install ferret` |
@@ -30,6 +31,7 @@ brew tap tenseleyFlow/tap
 
 # Then install any formula
 brew install aspen
+brew install cgfried
 brew install dlm
 brew install gitswitch
 brew install hyprkvm
