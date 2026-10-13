@@ -21,8 +21,9 @@ class Cgfried < Formula
   end
 
   test do
-    assert_match "cgfried #{version}", shell_output("#{bin}/cgfried --version")
-    assert_match "cgfried #{version}", shell_output("#{bin}/cgf --version")
+    version_banner = "cgfried (Cgfried) #{version}"
+    assert_match version_banner, shell_output("#{bin}/cgfried --version")
+    assert_match version_banner, shell_output("#{bin}/cgf --version")
 
     (testpath/"hello.c").write <<~C
       #include <stdio.h>
